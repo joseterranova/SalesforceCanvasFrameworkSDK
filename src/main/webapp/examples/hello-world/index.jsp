@@ -9,7 +9,7 @@
         return;
     }
     String yourConsumerSecret=System.getenv("CANVAS_CONSUMER_SECRET");
-    //String yourConsumerSecret="1818663124211010887";
+    //String yourConsumerSecret="3MVG9CEn_O3jvv0ymL1bt9O9KtEu2lLlRXNRWoKKOrnlandFxmh9YOxkf3dfA_UsWnRG7pJvkYAST8MkP4Uk.";
     String signedRequestJson = SignedRequest.verifyAndDecodeAsJson(signedRequest[0], yourConsumerSecret);
 %>
 
