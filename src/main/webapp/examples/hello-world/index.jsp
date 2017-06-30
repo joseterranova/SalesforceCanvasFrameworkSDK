@@ -2,6 +2,9 @@
 <%@ page import="java.util.Map" %>
 <%
     // Pull the signed request out of the request body and verify/decode it.
+    
+    %>Latest version<%
+    
     Map<String, String[]> parameters = request.getParameterMap();
     String[] signedRequest = parameters.get("signed_request");
     if (signedRequest == null) {%>
